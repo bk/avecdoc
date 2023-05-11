@@ -1,0 +1,45 @@
+site:
+  name: AvecCSS
+  description: Lightweight CSS framework
+  repo_url: 'https://github.com/bk/aveccss/'
+  repo_name: AvecCSS on GitHub
+  avec_theme: default
+  tags_in_nav: false
+  lang: en
+  auto_title_h1: true
+  tagline: Lightweight and featureful CSS framework
+  extra_css:
+    - css/custom.css
+    - css/pandoc/solarized.css
+
+theme: wdocs-theme
+
+nav:
+  - Home: /
+  - Typography:
+    - Overview: typography
+    - Basics: typography/basics
+    - Forms: typography/forms
+    - Tables: typography/tables
+    - Layout: typography/layout
+    - Odds and ends: typography/odds-and-ends
+  - Components:
+    - Overview: components
+    - Cards: components/cards
+    - Admonitions: components/admonition
+    - Hero: components/hero
+    - Tabs: components/tabs
+    - Modal window: components/modals
+    - Main menu: components/menu
+    - Stack: components/stack
+    - Accordion: components/accordion
+    - Dropdowns: components/dropdowns
+  - Utilities: utilities
+  - Customization:
+    - Overview: customization
+    - Themes and dark mode: customization/themes
+    - CSS variables: customization/variables
+
+pandoc: true
+pandoc_input_format: commonmark_x
+pandoc_filters: ['admonition.lua']

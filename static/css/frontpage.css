@@ -1,0 +1,22 @@
+.homepage h1,
+.homepage p.subtitle,
+.homepage section > p,
+.fp-boxes article footer,
+.fp-boxes article header {
+  text-align: center;
+}
+.homepage section > p {
+  font-size: 1.2em;
+  margin: 1em 3em 3em 3em;
+}
+.homepage section > p span {
+  color: var(--error);
+}
+.fp-boxes article header svg {
+  height: 40px;
+  stroke: var(--accent) !important;
+  display: inline-block;
+  position: relative;
+  margin-right: 6px;
+  top: 12px;
+}

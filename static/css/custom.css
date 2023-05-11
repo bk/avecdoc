@@ -1,0 +1,12 @@
+.demo {
+    background: var(--contrast-bg);
+    text-align: center;
+    padding: .5em;
+}
+
+/* The menu is uncomforably tall on a small phone */
+@media (max-width: 399px) {
+  body > header nav .menu h4 {
+    display: none !important;
+  }
+}
