@@ -29,6 +29,10 @@ You can also hide something in a specific brekapoint range with `hidden-md`, `hi
 - lg-only = `seen-001 hidden-xl`
 - xl-only = `seen-001 hidden-lg`
 
+## Display
+
+There are three base classes for setting `display` values: `.d-block`, `.d-inl` (which sets `inline-block`), and `.d-flex`. There are also responsive versions of these (such as `.d-flex-sm`) for the breakpoints `sm`, `md`, `lg` and `xl`. Currently there are no special classes for other values of `display`, such as `none`, `table`, `table-cell` and so on (except in combination with the `seen-*` utilities as described above).
+
 ## Border and border-radius
 
 A class following the pattern `b<direction>-<amount>` affects the borders of the element to which it is applied. Here `<direction>` is either `t`, `r`, `b`, or `l` (for each of the four sides), or `a` (for all sides); whereas `<amount>` is either 0, 1, 2 or 4, which indicates the number of pixels.
@@ -41,7 +45,7 @@ The class `borad-round` applies a border-radius of 50%, making square elements l
 
 ## Width
 
-The width of an element can be set with a class following the pattern `w<amount>`, where `<amount>` is one of 0, 10, 20, 25, 33, 40, 50, or 100. These numbers stand for the percentage of the available space. (Here, 33 actually means 33.333333%, but the other percentages are exact).
+The width of an element can be set with a class following the pattern `w<amount>`, where `<amount>` is one of 0, 10, 20, 25, 33, 40, 50, 66, 75, 80, or 100. These numbers stand for the percentage of the available space. (Here, 33 actually means 33.333333%, and 66 66.666666%, but the other percentages are exact).
 
 The widths can be made responsive by appending a breakpoint postfix. For instance, `w100 w50-sm w33-lg` means 100% width in mobile, 50% width in tablet and small desktop and 1/3 width in normal desktops/laptops.
 

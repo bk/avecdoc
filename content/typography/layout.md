@@ -36,7 +36,75 @@ A child element can always override the setting imposed by the container by spec
 - `max-md`, `max-lg`, `max-xl`: Add this to `fixed` to specify a maximum width, or use it to override an `items-max-XX` setting in the container.
 - `normal`: Behave as if the container had not specified any `items-*` class.
 
-## Grids and columns
+## Header and nav
+
+### Header
+
+The main `<header>` (i.e. a `<header>` which is an immediate child of `<body>`) gets an accented background and a bottom-border.
+
+### Nav
+
+A horizontal navigation bar, `<nav>`, is typically at the top of the header. The children of `<nav>` are spaced equally and the underlining of links is removed.
+
+Here is a simple but not atypical `<nav>`:
+
+<div class="demo">
+<nav>
+  <ul>
+    <li><strong><a href="/">AvecCSS</a></strong></li>
+  </ul>
+  <ul>
+    <li><a href="/products/">Products</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li>
+      <details role="dropdown">
+        <summary>Dropdown</summary>
+        <ul>
+          <li><a href="#">Dicta maiores</a></li>
+          <li><a href="#">Laboriosam</a></li>
+          <li><a href="#">Quibusdam quod</a></li>
+          <li><a href="#">Nihil obstat</a></li>
+        </ul>
+      </details>
+    </li>
+    <li><a href="/mission/">Our mission</a></li>
+  </ul>
+</nav>
+</div>
+
+```
+<nav>
+  <ul>
+    <li><strong><a href="/"><strong>AvecCSS</a></strong></li>
+  </ul>
+  <ul>
+    <li><a href="/products/">Products</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li>
+      <details role="dropdown">
+        <summary>Dropdown</summary>
+        <ul>
+          <li><a href="#">Dicta maiores</a></li>
+          ...
+        </ul>
+      </details>
+    </li>
+    <li><a href="/mission/">Our mission</a></li>
+  </ul>
+</nav>
+```
+
+You would often have a "hamburger menu" at the top right of the main `<nav>`, at least in mobile and sometimes in all screen sizes. This is easily done using AvecCSS; see the page on the [menu component](/components/menu/)
+
+For more on the Dropdown widget, see [here](/components/dropdowns/).
+
+## Footer
+
+The footer is full-width by default and separated from the body with a top border. It has a smaller font.
+
+## Grids, columns, flex
+
+Despite its small size, AvecCSS provides three different methods for arranging arbitrary page elements into a structured layout.
 
 ### Grid
 
@@ -153,68 +221,81 @@ An example of a moderately complex layout implemented with these building blocks
 </div>
 ```
 
-## Header and nav
+### Flex
 
-### Header
+A third possibility is to build up your own layout using `display: flex` (normally via the `.d-flex` utility class) along with helper classes made available by AvecCSS. This is not as rigid as the above options but does require some knownledge of CSS.
 
-The main `<header>` (i.e. a `<header>` which is an immediate child of `<body>`) gets an accented background and a bottom-border.
+Here is a simple example that might represent a rather unstructured collection of differently-sized thumbnails:
 
-### Nav
-
-A horizontal navigation bar, `<nav>`, is typically at the top of the header. The children of `<nav>` are spaced equally and the underlining of links is removed.
-
-Here is a simple but not atypical `<nav>`:
-
-<div class="demo">
-<nav>
-  <ul>
-    <li><strong><a href="/">AvecCSS</a></strong></li>
-  </ul>
-  <ul>
-    <li><a href="/products/">Products</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li>
-      <details role="dropdown">
-        <summary>Dropdown</summary>
-        <ul>
-          <li><a href="#">Dicta maiores</a></li>
-          <li><a href="#">Laboriosam</a></li>
-          <li><a href="#">Quibusdam quod</a></li>
-          <li><a href="#">Nihil obstat</a></li>
-        </ul>
-      </details>
-    </li>
-    <li><a href="/mission/">Our mission</a></li>
-  </ul>
-</nav>
+<div class="d-flex f-jc-center f-alit-center f-wrap">
+  <div class="demo m-1" style="width:150px; height: 200px"></div>
+  <div class="demo m-1" style="width:170px; height: 120px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 150px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 200px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 150px"></div>
+  <div class="demo m-1" style="width:170px; height: 120px"></div>
 </div>
 
-```
-<nav>
-  <ul>
-    <li><strong><a href="/"><strong>AvecCSS</a></strong></li>
-  </ul>
-  <ul>
-    <li><a href="/products/">Products</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li>
-      <details role="dropdown">
-        <summary>Dropdown</summary>
-        <ul>
-          <li><a href="#">Dicta maiores</a></li>
-          ...
-        </ul>
-      </details>
-    </li>
-    <li><a href="/mission/">Our mission</a></li>
-  </ul>
-</nav>
+```html
+<div class="d-flex f-jc-center f-alit-center f-wrap">
+  <div class="demo m-1" style="width:150px; height: 200px"></div>
+  <div class="demo m-1" style="width:170px; height: 120px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 150px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 200px"></div>
+  <div class="demo m-1" style="width:160px; height: 210px"></div>
+  <div class="demo m-1" style="width:150px; height: 150px"></div>
+  <div class="demo m-1" style="width:170px; height: 120px"></div>
+</div>
 ```
 
-You would often have a "hamburger menu" at the top right of the main `<nav>`, at least in mobile and sometimes in all screen sizes. This is easily done using AvecCSS; see the page on the [menu component](/components/menu/)
+Another example emulating the effect of `grid-xs c2 c3-sm c4-md c5-lg`, similar to one of the grid examples seen above:
 
-For more on the Dropdown widget, see [here](/components/dropdowns/).
+<div class="d-flex f-wrap m-neg-1 fc-00a">
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+</div>
 
-## Footer
+```html
+<div class="d-flex f-wrap m-neg-1 fc-00a">
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+  <div class="w50 w33-sm w25-md w20-lg"><div class="demo">item</div></div>
+</div>
+```
 
-The footer is full-width by default and separated from the body with a top border. It has a smaller font.
+The flex helper classes are as follows:
+
+- On the flex container (`.d-flex` or similar): 
+  - `.f-dir-row`, `f-dir-col`: flex-direction.
+  - `.f-wrap`, `f-nowrap`: flex-wrap.
+  - `.f-jc-{start|end|center|between|around|evenly}`: justify-content.
+  - `.f-alit-{start|end|center|base|stretch}`: align-items.
+- On the flex container but (also or only) affecting the immediate children:
+  - `.m-neg-{1|2}`: sets negative margin on the container but also the
+    corresponding padding on the children.
+  - `.fc-{0|1}{0|1}{0|a}`: Sets the `flex` shorthand property on the children
+    (grow, shrink, basis).
+- On the children:
+  - `.grow-{0|1|2|3}`: flex-grow.
+  - `.basis-{a|0|fill}`: set flex-basis to `auto`, `0` or `100%`, respectively.
+  - `.als-{start|end|center|base|stretch}`: align-self.
