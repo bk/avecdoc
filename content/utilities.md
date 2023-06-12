@@ -65,7 +65,7 @@ The classes `larger` and `smaller` apply the relative font size keywords `larger
 
 Foreground or text color can be set with the following classes: `text-vivid`, `text-accent`, `text-muted`, `text-reverse`, `text-success`, `text-warning`, `text-error`, `text-info`, `text-normal`.
 
-Background color can be set with the following classes: `bg-accent`, `bg-contrast`, `bg-marked`, `bg-reverse`, `bg-success`, `bg-warning`, `bg-error`, `bg-info`, `bg-normal`.
+Background color can be set with the following classes: `bg-accent`, `bg-contrast`, `bg-marked`, `bg-reverse`, `bg-success`, `bg-warning`, `bg-error`, `bg-info`, `bg-normal`, `bg-card`.
 
 The colors which are applied are from the active theme. They are registered in CSS variables which mostly have names similar to the class names.
 
