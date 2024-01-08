@@ -57,7 +57,7 @@ Here is a simple but not atypical `<nav>`:
     <li><a href="/products/">Products</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li>
-      <details role="dropdown">
+      <details role="menu">
         <summary>Dropdown</summary>
         <ul>
           <li><a href="#">Dicta maiores</a></li>
@@ -81,7 +81,7 @@ Here is a simple but not atypical `<nav>`:
     <li><a href="/products/">Products</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li>
-      <details role="dropdown">
+      <details role="menu">
         <summary>Dropdown</summary>
         <ul>
           <li><a href="#">Dicta maiores</a></li>
