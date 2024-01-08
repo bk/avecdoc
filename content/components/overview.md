@@ -367,3 +367,27 @@ A dropdown can be made to look like a button by adding `role="button"` to the `<
 
 The list shown by the dropdown is normally placed so that its left side aligns with the left side of the `<summary>`. You can change this to the right side by adding `class="rightset"` to the `<ul>`. (The difference between the two is not visible unless the list is broader than the dropdown button, since the minimum width is the same as the button).
 
+
+## Badges
+
+A badge shows a status indicator or a number which relates to a specific (typically small) element,
+often a button, a tab or a navigation item. The value for the badge is given with a `data-badge` attribute.
+An empty `data-badge` leads to a badge that is a small dot.
+
+<div class="mb-2">
+<button class="badge mr-1" data-badge="917">First</button>
+<button class="badge mr-1" data-badge="">Second</button>
+<button class="badge" data-badge="✓">Third</button>
+</div>
+
+<div>
+<a class="badge" data-badge="88" href="#">Whatever</a>
+</div>
+
+```html
+<div>
+  <button class="badge mr-1" data-badge="917">First</button>
+  <button class="badge mr-1" data-badge="">Second</button>
+  <button class="badge" data-badge="✓">Third</button>
+</div>
+```

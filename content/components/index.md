@@ -12,6 +12,7 @@ subtitle: Composite widgets, such as cards, tabs and modals
 - [Stack]
 - [Accordion]
 - [Dropdowns]
+- [Badges]
 
 
 [Cards]: cards/
@@ -23,3 +24,4 @@ subtitle: Composite widgets, such as cards, tabs and modals
 [Stack]: stack/
 [Accordion]: accordion/
 [Dropdowns]: dropdowns/
+[Badges]: badge/

@@ -34,6 +34,7 @@ nav:
     - Stack: components/stack
     - Accordion: components/accordion
     - Dropdowns: components/dropdowns
+    - Badges: components/badge
   - Utilities: utilities
   - Customization:
     - Overview: customization
