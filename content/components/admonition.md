@@ -3,7 +3,7 @@ title: Admonitions
 subtitle: Messages, alerts and tips
 ---
 
-An admonition is a message or reminder in the text of the page to alert the reader to something. It can contain a tip, a warning or other content. There are four types of admonitions, distinguished by their colors:
+An admonition is a message or reminder in the text of the page to alert the reader to something. It can contain a tip, a warning or other content. There are five types of admonitions, distinguished by their colors:
 
 !!! note "Info"
     This is an informational message (info) which may contain a note or a tip. It is blue.
@@ -18,6 +18,9 @@ An admonition is a message or reminder in the text of the page to alert the read
 !!! success
     This is a success message. We are happy to tell you that it is green.
 
+!!! neutral
+    This is a low-key message with a muted heading and border color. Its color varies depending on the theme.
+
 The structure of an admonition is as follows:
 
 ```html
@@ -30,5 +33,5 @@ The structure of an admonition is as follows:
 
 An informational message is the default, so formally the type class `info` can be omitted.
 
-A warning message has the class `caution` or `warning`. An error message has the class `error` or `danger`, and a success message the class `success`.
+A warning message has the class `caution` or `warning`. An error message has the class `error` or `danger`, and a success message the class `success`. A low-key message that does not belong to any of these types has the class `neutral`.
 

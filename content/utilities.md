@@ -67,6 +67,8 @@ Foreground or text color can be set with the following classes: `text-vivid`, `t
 
 Background color can be set with the following classes: `bg-accent`, `bg-contrast`, `bg-marked`, `bg-reverse`, `bg-success`, `bg-warning`, `bg-error`, `bg-info`, `bg-normal`, `bg-card`.
 
+For buttons and button-like elements, an outline style can be turned on by adding the class `outline`. The foreground and border color on such buttons can be controlled with the additional classes `success`, `error`, `warning`, `info`, or `plain`. (The last of these gives the button the default text foreground color).
+
 The colors which are applied are from the active theme. They are registered in CSS variables which mostly have names similar to the class names.
 
 ## Alignment

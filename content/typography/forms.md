@@ -55,7 +55,18 @@ Buttons have been seen [previously](../basics/). Form elements are kept simple. 
   <button>Send</button>
   <button type="reset" class="bg-error">Reset</button>
   <button disabled="disabled">Disabled</button>
+
 </form>
 
 One thing to note here is that the reset button has a `bg-error` class so as to make it red, and most elements have been placed into a grid or into columns using the `grid` and `cols` classes. Both of these will be discussed later.
 
+Outlined button variants:
+
+<div class="mt-1">
+  <button class="outline">.outline</button>
+  <button class="outline plain">+.plain</button>
+  <button class="outline success">+.success</button>
+  <button class="outline error">+.error</button>
+  <button class="outline warning">+.warning</button>
+  <button class="outline info">+.info</button>
+</div>
