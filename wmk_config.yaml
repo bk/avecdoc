@@ -35,6 +35,8 @@ nav:
     - Accordion: components/accordion
     - Dropdowns: components/dropdowns
     - Badges: components/badge
+    - Loading: components/loading
+    - Animations: components/animations
   - Utilities: utilities
   - Customization:
     - Overview: customization
