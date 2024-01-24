@@ -33,6 +33,7 @@ nav:
     - Main menu: components/menu
     - Stack: components/stack
     - Accordion: components/accordion
+    - Tree: components/tree
     - Dropdowns: components/dropdowns
     - Badges: components/badge
     - Loading: components/loading
