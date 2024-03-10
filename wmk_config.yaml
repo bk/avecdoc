@@ -26,6 +26,7 @@ nav:
   - Components:
     - Overview: components
     - Cards: components/cards
+    - Box: components/box
     - Admonitions: components/admonition
     - Hero: components/hero
     - Tabs: components/tabs
@@ -35,8 +36,10 @@ nav:
     - Accordion: components/accordion
     - Tree: components/tree
     - Dropdowns: components/dropdowns
+    - Chips: components/chip
     - Badges: components/badge
     - Loading: components/loading
+    - Iconbutton: components/iconbutton
     - Animations: components/animations
   - Utilities: utilities
   - Customization:

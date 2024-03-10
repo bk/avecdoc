@@ -299,3 +299,9 @@ The flex helper classes are as follows:
   - `.grow-{0|1|2|3}`: flex-grow.
   - `.basis-{a|0|fill}`: set flex-basis to `auto`, `0` or `100%`, respectively.
   - `.als-{start|end|center|base|stretch}`: align-self.
+
+## Text columns
+
+The `.textcols` class arranges the contents into equally-wide newspaper-like columns with flowing text. The number of columns depends on the horizontal space available. The ideal width of each column depends upon the variable `--textcol-width-normal`, which by default is  `19rem`.
+
+Add the `narrow` class, and this sets the ideal column width to `--textcol-width-narrow` (by default `10rem`).
